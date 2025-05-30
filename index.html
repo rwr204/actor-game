@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Link Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Actor Link Game</h1>
+        <p>Connect the actors by typing the name of a movie they both appeared in.</p>
+
+        <div id="game-area">
+            <div class="actor-pair">
+                <span id="actor-a" class="actor-name">Actor A</span>
+                <input type="text" id="movie-title-input" placeholder="Enter Movie Title">
+                <span id="actor-b" class="actor-name">Actor B</span>
+            </div>
+            <button id="submit-button">Submit Movie</button>
+            <button id="start-button">Start New Game</button>
+        </div>
+
+        <div id="message-area">
+            <p id="message-text"></p>
+        </div>
+
+        <div id="score-area">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="chain-area">
+            <h3>Your Chain:</h3>
+            <ul id="chain-list"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

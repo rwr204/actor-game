@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.actor-pair {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Changed for better spacing */
+    margin: 20px 0;
+    gap: 10px; /* Added gap */
+}
+
+.actor-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    min-width: 120px; /* Give some min width */
+    text-align: center;
+}
+
+#movie-title-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    flex-grow: 1; /* Allow input to take available space */
+    min-width: 150px; /* Ensure it's not too small */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#start-button {
+    background-color: #28a745;
+}
+#start-button:hover {
+    background-color: #1e7e34;
+}
+
+
+#message-area {
+    margin-top: 20px;
+    min-height: 40px; /* Prevent layout shift */
+}
+
+#message-text {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#score-area, #chain-area {
+    margin-top: 20px;
+}
+#chain-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+#chain-list li {
+    margin-bottom: 5px;
+}
