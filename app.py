@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZTBmNDMyYzNhZWQ5MzA3NzM1YTZmODQ5NDQ1NTcwNyIsIm5iZiI6MTc0ODYyNTI1MC42ODQsInN1YiI6IjY4MzllNzYyNzc3NTljMmM1Mjk2OTEwMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mPktZSlelngEJhhlnJUIuiT1j7vIosptO678ShLay1c'  # Change this for production!
 
 # --- IMPORTANT: Configure your TMDB API Key here ---
-TMDB_API_KEY = '1e0f432c3aed9307735a6f8494455707'  # Replace with your actual key
+TMDB_API_KEY = 1e0f432c3aed9307735a6f8494455707  # Replace with your actual key
 TMDB_BASE_URL = 'https://api.themoviedb.org/3'
 
 def fetch_from_tmdb(endpoint, params=None):
